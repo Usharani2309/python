@@ -1,0 +1,15 @@
+legs = int(input("legs:"))
+heads = int(input("heads:"))
+flag = False
+for cows in range(0,heads+1):
+    hens = heads - cows
+    c_legs =4*cows + 2*hens
+    if legs == c_legs:
+        flag = True
+        break
+if flag:
+    print("cows:",cows)
+    print("hens",hens)
+else:
+    print("no solution")
+    

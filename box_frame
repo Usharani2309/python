@@ -1,0 +1,11 @@
+x = int(input("stars:"))
+y = int(input("lines:"))
+z = int(input("block:"))
+for k in range(z):
+    y = y-1
+    for i in range(y+1):
+        for j in range(x+1):
+            print("*",end=" ")
+        print()
+    print("no of stars :",y*x)
+    print("_____________")
